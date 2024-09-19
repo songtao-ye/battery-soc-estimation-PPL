@@ -199,10 +199,10 @@ def main():
               .format(results_all[0], results_all[1], results_all[2], results_all[3]))
         print('-'*25)
 
-        # if results_all[2] < min_rmse:
-        #     min_rmse = results_all[2]
-        #     plot_results(preds, labels, results, save_path=osp.join(args.save_path, 'result.png'))
-        #     torch.save(model.state_dict(), osp.join(args.save_path, 'best_model.pth.tar'))
+        if results_all[2] < min_rmse:
+            min_rmse = results_all[2]
+            plot_results(preds, labels, results, save_path=osp.join(args.save_path, 'result.png'))
+            torch.save(model.state_dict(), osp.join(args.save_path, 'best_model.pth.tar'))
 
     plot_loss(train_losses, test_losses, save_path=args.save_path)
 
