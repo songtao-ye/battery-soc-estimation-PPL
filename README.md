@@ -4,6 +4,8 @@
 
 Code for our paper that predicts power battery SOC at different temperatures. [[pdf]](https://www.sciengine.com/SCTS/doi/10.1007/s11431-024-2765-2;JSESSIONID=833aa97d-8aaa-4449-8cfc-c5ec8a5247d8)
 
+Estimation of the State of Charge (SOC) of Lithium-ion batteries in a wide temperature scope.
+
 ![model](./figs/model.png)
 
 -------------------------------
